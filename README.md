@@ -1,6 +1,8 @@
-# sinatra-at-the-movies
+# Sinatra At The Movies
 
-## Exercise
+## Your Mission
 
-Use the provided model for a movie to finish creating a very simple movie review application using MVC principles.
+Use the provided Ruby class located within the models folder to finish creating a very simple movie review application using MVC principles.
+
+
 
