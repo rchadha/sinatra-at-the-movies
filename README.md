@@ -14,6 +14,7 @@ When you are done, the application should be able to perform all the CRUD operat
   ```
 2. The Ruby class located within the models folder will give you a good head start. Use it as a foundation and, if possible, try not to modify it at all. It should contain all the functionality neccessary to create the 7 RESTful routes.
 
+http://www.sinatrarb.com/
 
 
 
