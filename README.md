@@ -4,6 +4,8 @@
 
 Fork this repository and finish building a very simple movie review application using MVC principles using the components already provided.
 
+When you are done, the application should be able to perform all the CRUD operations on a movie.
+
 ### Tips
 
 1. The controller.rb file will be your main Sinatra file. Be sure to check its contents and use the comments within as a guideline. To run your application:
