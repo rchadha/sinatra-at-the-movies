@@ -1,13 +1,19 @@
-<h1>All Movies</h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-<% if @movies.count > 0 %>
-    <% @movies.each do |movie|  %>
-        <%= movie.id %> - <a href="/movies/<%= movie.id%>"> <%= movie.title %> </a>
-        <br />
+<div style="margin-left: 20px">
+    <h1>All Movies</h1>
+    <hr>
+    <% if @movies.count > 0 %>
+        <% @movies.each do |movie|  %>
+            <%= movie.id %> - <%= movie.title %> <a href="/movies/<%= movie.id %>">Show Details</a>
+            <br />
+        <% end %>
+    <% else %>
+        <p>No movies added.</p>
     <% end %>
-<% else %>
-    <p>No movies added.</p>
-<% end %>
 
+    <hr>
 
-<p><a href="/movies/new">New Movie</a></p>
+    <p><a href="/movies/new">Add a new movie</a></p>
+
+</div>

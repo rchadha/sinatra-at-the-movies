@@ -1,14 +1,20 @@
-<h2>Viewing movie:- <%= @movie.title %></h2>
-Title: <%= @movie.title %> <br />
-Director: <%= @movie.director %> <br />
-Rating: <%= @movie.rating %> <br />
-<a href="/movies/<%= @movie.id %>/edit">Edit</a>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-<p>
-<form action="/movies/<%= @movie.id %>" method="post">
-  <input type="hidden" name="_method" value="delete" />
-  <input type="submit" value="Delete" />
-</form>
-</p>
+<div style="margin-left: 20px">
+  <h2><%= @movie.title %></h2>
+  <label>Title: <%= @movie.title %></label> <br>
+  <label>Director: <%= @movie.director %> </label>  <br>
+  <label>Rating: <%= @movie.rating %> </label> <br>
+  <a href="/movies/<%= @movie.id %>/edit">Edit</a>
 
-<p><a href="/movies">Back to Movies index</a> </p>
+  <form action="/movies/<%= @movie.id %>" method="post">
+    <input type="hidden" name="_method" value="delete" />
+    <input type="submit" class="btn btn-danger" value="Delete" />
+  </form>
+
+  <p><a href="/movies">Show all movies</a> </p>
+</div>
+
+
+
+
