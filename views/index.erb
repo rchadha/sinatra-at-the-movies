@@ -1,0 +1,13 @@
+<h1>All Movies</h1>
+
+<% if @movies.count > 0 %>
+    <% @movies.each do |movie|  %>
+        <%= movie.id %> - <a href="/movies/<%= movie.id%>"> <%= movie.title %> </a>
+        <br />
+    <% end %>
+<% else %>
+    <p>No movies added.</p>
+<% end %>
+
+
+<p><a href="/movies/new">New Movie</a></p>

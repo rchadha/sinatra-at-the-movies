@@ -47,7 +47,8 @@ end
 # USAGE
 
 # New movie using create (set and save automatically)
-# Movie.create({:title => "Raiders of the Lost Ark", :director => "Spielberg", :rating => 10})
+ Movie.create({:title => "Raiders of the Lost Ark", :director => "Spielberg", :rating => 10})
+Movie.create({:title => "Raiders of the storm", :director => "Spielberg", :rating => 11})
 
 # New movie (set and save manually)
 # m2 = Movie.new

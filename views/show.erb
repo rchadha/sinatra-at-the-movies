@@ -1,0 +1,14 @@
+<h2>Viewing movie:- <%= @movie.title %></h2>
+Title: <%= @movie.title %> <br />
+Director: <%= @movie.director %> <br />
+Rating: <%= @movie.rating %> <br />
+<a href="/movies/<%= @movie.id %>/edit">Edit</a>
+
+<p>
+<form action="/movies/<%= @movie.id %>" method="post">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="Delete" />
+</form>
+</p>
+
+<p><a href="/movies">Back to Movies index</a> </p>

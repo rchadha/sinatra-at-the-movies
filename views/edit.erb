@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<h2>Edit movie: <%= @movie.title %></h2>
+ <br>
+
+<form class="form-inline" action="/movies/<%= @movie.id %>" method="post">
+  <div class="form-group">
+    <input type="hidden" name="_method" value="patch" />
+    <label>Title</label>
+    <input type="text" name="title" class="form-control" value="<%= @movie.title %>">
+  </div>
+
+  <div class="form-group">
+    <label>Director</label>
+    <input type="text" name="director" class="form-control" value="<%= @movie.director %>">
+  </div>
+
+  <div class="form-group">
+    <label>Rating</label>
+    <input type="text" name="rating" class="form-control" value="<%= @movie.rating %>">
+  </div>
+
+  <input class="btn btn-default" type="submit"> <br><br>
+
+
+  <a href="/movies" >Back to movies index page</a>
+</form>
